@@ -49,3 +49,22 @@ function updateWeatherImage() {
         weatherImage.src = 'day.png'; // Замените на путь к вашему ночному изображению
     }
 }
+
+
+function updateDateTime() {
+    // Определяем временную зону Екатеринбурга
+    const ekbTimeZone = 'Asia/Yekaterinburg';
+    
+    // Получаем текущее время в Екатеринбурге
+    const currentTime = new Date().toLocaleTimeString('ru-RU', { timeZone: ekbTimeZone });
+
+    // Получаем текущую дату в Екатеринбурге
+    const currentDate = new Date().toLocaleDateString('ru-RU', { timeZone: ekbTimeZone });
+    
+    // Выводим время и дату на страницу
+    document.getElementById('Time').textContent = currentTime;
+    document.getElementById('DataTime').textContent = currentDate;
+}
+
+// Обновляем дату и время каждые 1 секунду
+setInterval(updateDateTime, 1000);
