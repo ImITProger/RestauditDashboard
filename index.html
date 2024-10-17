@@ -6,10 +6,11 @@
     <title>Restaudit Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="updateDateTime()">
     <header>
         <div class="HeaderCenter">
             <div class="new-closed">
+                <span id="Time"></span>
                 <div class="new">156<br>Новые</div>
             </div>
             <div class="logo">
@@ -17,13 +18,14 @@
             </div>
             <div class="new-closed">
                 <div class="closed">200<br>Закрытые</div>
+                <span id="DataTime"></span>
             </div>
         </div>
     </header>
         
     <div class="content">
         <div class="columns-1">
-            <!-- <img src="Погода.png" class="weatherImages2" class="" alt=""> -->
+            
             
             <div class="weather">
                 <img id="weatherImage" alt="weather">
