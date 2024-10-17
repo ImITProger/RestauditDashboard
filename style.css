@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+.logoimg{
+    margin-top: 50px;
+    width: 1427px;
+    height: 298px;
+}
+
+
+.HeaderCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+
+.new-closed {
+    display: flex;
+    margin-top: 50px;
+}
+
+.new, .closed {
+    background-color: #FFFFFF;
+    border: 3px solid #EC7F24;
+    border-radius: 17px;
+    padding: 15px;
+    width: 569px;
+    height: 254px;
+    margin: 0 170px;
+    text-align: center;
+    font-size: 96px;
+    box-shadow: 0px 0px 50px 10px gray;
+}
+
+.new {
+    color: #EC7F24;
+}
+
+.closed {
+    color: #EC7F24;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(2, auto); 
+    grid-template-areas: "a" "b";
+    margin-top: 80px;
+}
+
+.columns-1, .columns-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px; 
+}
+
+.weather {
+    position: relative; /* Относительное позиционирование для родительского контейнера */
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 3px solid #EC7F24;
+    border-radius: 17px;
+    min-width: 15%;
+    max-height: 16vmax;
+    box-shadow: 0px 0px 50px 10px gray;
+    overflow: hidden; 
+}
+
+.weather-info {
+    position: absolute; /* Абсолютное позиционирование для текста */
+    top: 0; /* Выровнять по верхнему краю */
+    left: 0; /* Выровнять по левому краю */
+    right: 0; /* Растянуть до правого края */
+    bottom: 0; /* Растянуть до нижнего края */
+    display: flex; /* Используем flex для центрирования */
+    flex-direction: column; /* Вертикальная ориентация текста */
+    justify-content: center; /* Центрируем текст по вертикали */
+    align-items: center; /* Центрируем текст по горизонтали */
+    color: white; /* Цвет текста */
+    font-size: 64px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Добавление тени для лучшей читаемости */
+    
+}
+
+.weather img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Убираем это поле, чтобы не было расстояния между изображением и текстом */
+    
+}
+
+#weatherImages{
+    width: 65%;
+    height: 65%;
+}
+
+#City, #AirTemp, #WindSpeed {
+    margin: 50px 0; /* Отступы между строками */
+}
+
+
+.visits{
+    min-width: 17%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #EC7F24;
+    border-radius: 17px;
+    box-shadow: 0px 0px 50px 10px gray;
+    overflow: hidden; 
+}
+
+.stats{
+    min-width: 17%;
+    min-height: 665px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #EC7F24;
+    border-radius: 17px;
+    box-shadow: 0px 0px 50px 10px gray;
+    overflow: hidden; 
+}
+
+.requests{
+    min-width: 40%;
+    min-height: 665px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #EC7F24;
+    border-radius: 17px;
+    box-shadow: 0px 0px 50px 10px gray;
+    overflow: hidden; 
+}
+
+.calls, .rating {
+    min-width: 49%;
+    min-height: 23vmax;
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #EC7F24;
+    border-radius: 17px;
+    box-shadow: 0px 0px 50px 10px gray;
+    overflow: hidden; 
+}
+
+.calls h2, .requests h2, .visits h2, .stats h2, .rating h2, .weather h2 {
+    color: #EC7F24;
+    margin: 35px;
+    font-size: 96px;
+}
+
+table {
+    width: 100%;
+    max-height: 90%;
+    border-collapse: collapse;
+}
+
+
+table th, table td {
+    padding: 8px 8px 8px 4%;
+    text-align: left;
+    font-size: 64px;
+    overflow: hidden; /* Скрытие переполнения */
+    text-overflow: ellipsis; /* Троеточие для длинного текста */
+    white-space: nowrap; /* Предотвращение переноса текста */
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaudit Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="HeaderCenter">
+            <div class="new-closed">
+                <div class="new">156<br>Новые</div>
+            </div>
+            <div class="logo">
+                <img src="Logo.png" class="logoimg" alt="">
+            </div>
+            <div class="new-closed">
+                <div class="closed">200<br>Закрытые</div>
+            </div>
+        </div>
+    </header>
+        
+    <div class="content">
+        <div class="columns-1">
+            <img src="Погода.png" class="" alt="">
+            
+            <div class="weather">
+                <img id="weatherImage" alt="weather">
+                <div class="weather-info">
+                    <img id="weatherImages" alt="weather">
+                    <p>г. <span id="City"></span></p> 
+                    <p>Температура: <span id="AirTemp"></span> °C</p> 
+                    
+                    <p id="WindSpeed">Ветер: </p> 
+                    <p id="CityError"></p> 
+                </div>
+            </div>
+
+
+            <div class="requests">
+                <h2>Заявки, обрати внимание!</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Заявка клиента</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>id12324 Брют Советская</td>
+                            <td>Новая</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+
+            <div class="visits">
+                <h2>Выезды</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Клиент</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Брют Советская</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stats">
+                <h2>Статистика</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Статус</th>
+                            <th>Кол-во</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>В работе</td>
+                            <td>34</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="columns-2">
+            <div class="calls">
+                <h2>Звонки из АТС</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Номер</th>
+                            <th>Время</th>
+                            <th>Статус</th>
+                            <th>ФИО</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>+79292002177</td>
+                            <td>15:30</td>
+                            <td>Принят</td>
+                            <td>Петросян Араик</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="rating">
+                <h2>Рейтинг сотрудников</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ФИО</th>
+                            <th>Новые</th>
+                            <th>Завершено</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Иванов Иван</td>
+                            <td>18</td>
+                            <td>50</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="Weater.js"></script>
+</body>
+</html>
