@@ -10,9 +10,9 @@ body {
 }
 
 .logoimg{
-    margin-top: 50px;
-    width: 1427px;
-    height: 298px;
+    margin-top: 17px;
+    width: 100%;
+    height: 50px;
 }
 
 
@@ -26,7 +26,7 @@ body {
 
 .new-closed {
     display: flex;
-    margin-top: 50px;
+    margin-top: 17px;
 }
 
 .new, .closed {
@@ -34,11 +34,11 @@ body {
     border: 3px solid #EC7F24;
     border-radius: 17px;
     padding: 15px;
-    width: 569px;
-    height: 254px;
-    margin: 0 170px;
+    /* width: 569px;
+    height: 254px; */
+    margin: 0 70px;
     text-align: center;
-    font-size: 96px;
+    font-size: 17px;
     box-shadow: 0px 0px 50px 10px gray;
 }
 
@@ -55,13 +55,13 @@ body {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(2, auto); 
     grid-template-areas: "a" "b";
-    margin-top: 80px;
+    margin-top: 17px;
 }
 
 .columns-1, .columns-2 {
     display: flex;
     justify-content: space-between;
-    margin: 50px; 
+    margin: 17px; 
 }
 
 .weather {
@@ -71,7 +71,7 @@ body {
     border: 3px solid #EC7F24;
     border-radius: 17px;
     min-width: 15%;
-    max-height: 16vmax;
+    /* max-height: 16vmax; */
     box-shadow: 0px 0px 50px 10px gray;
     overflow: hidden; 
 }
@@ -87,25 +87,31 @@ body {
     justify-content: center; /* Центрируем текст по вертикали */
     align-items: center; /* Центрируем текст по горизонтали */
     color: white; /* Цвет текста */
-    font-size: 64px;
+    font-size: 24px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Добавление тени для лучшей читаемости */
     
 }
 
+.weatherImages2{
+    width: 5%;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
 .weather img {
     width: 100%;
-    height: auto;
+    height: 300px;
     margin-bottom: 10px; /* Убираем это поле, чтобы не было расстояния между изображением и текстом */
     
 }
 
 #weatherImages{
-    width: 65%;
-    height: 65%;
+    width: 30%;
+    height: 30%;
 }
 
 #City, #AirTemp, #WindSpeed {
-    margin: 50px 0; /* Отступы между строками */
+    margin: 17px 0; /* Отступы между строками */
 }
 
 
@@ -121,8 +127,8 @@ body {
 }
 
 .stats{
-    min-width: 17%;
-    min-height: 665px;
+     min-width: 17%;
+    /*min-height: 665px; */
     background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
@@ -133,8 +139,8 @@ body {
 }
 
 .requests{
-    min-width: 40%;
-    min-height: 665px;
+     min-width: 40%;
+    /*min-height: 665px; */
     background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
@@ -146,7 +152,7 @@ body {
 
 .calls, .rating {
     min-width: 49%;
-    min-height: 23vmax;
+    min-height: 400px;/* */
     background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
@@ -159,7 +165,7 @@ body {
 .calls h2, .requests h2, .visits h2, .stats h2, .rating h2, .weather h2 {
     color: #EC7F24;
     margin: 35px;
-    font-size: 96px;
+    font-size: 27px;
 }
 
 table {
@@ -172,7 +178,7 @@ table {
 table th, table td {
     padding: 8px 8px 8px 4%;
     text-align: left;
-    font-size: 64px;
+    font-size: 17px;
     overflow: hidden; /* Скрытие переполнения */
     text-overflow: ellipsis; /* Троеточие для длинного текста */
     white-space: nowrap; /* Предотвращение переноса текста */
