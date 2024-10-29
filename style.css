@@ -41,8 +41,6 @@ body {
     border: 3px solid #EC7F24;
     border-radius: 17px;
     padding: 15px;
-    /* width: 569px;
-    height: 254px; */
     margin: 0 30px;
     text-align: center;
     font-size: 48px;
@@ -72,30 +70,29 @@ body {
 }
 
 .weather {
-    position: relative; /* Относительное позиционирование для родительского контейнера */
+    position: relative;
     background-color: #FFFFFF;
     padding: 10px;
     border: 3px solid #EC7F24;
     border-radius: 17px;
     min-width: 15%;
-    /* max-height: 16vmax; */
     box-shadow: 0px 0px 50px 10px gray;
     overflow: hidden; 
 }
 
 .weather-info {
-    position: absolute; /* Абсолютное позиционирование для текста */
-    top: 0; /* Выровнять по верхнему краю */
-    left: 0; /* Выровнять по левому краю */
-    right: 0; /* Растянуть до правого края */
-    bottom: 0; /* Растянуть до нижнего края */
-    display: flex; /* Используем flex для центрирования */
-    flex-direction: column; /* Вертикальная ориентация текста */
-    justify-content: center; /* Центрируем текст по вертикали */
-    align-items: center; /* Центрируем текст по горизонтали */
-    color: white; /* Цвет текста */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
     font-size: 24px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Добавление тени для лучшей читаемости */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     
 }
 
@@ -108,7 +105,7 @@ body {
 .weather img {
     width: 100%;
     height: 300px;
-    margin-bottom: 10px; /* Убираем это поле, чтобы не было расстояния между изображением и текстом */
+    margin-bottom: 10px; 
     
 }
 
@@ -118,7 +115,7 @@ body {
 }
 
 #City, #AirTemp, #WindSpeed {
-    margin: 17px 0; /* Отступы между строками */
+    margin: 17px 0; 
 }
 
 
@@ -135,7 +132,6 @@ body {
 
 .stats{
      min-width: 17%;
-    /*min-height: 665px; */
     background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
@@ -147,7 +143,6 @@ body {
 
 .requests{
      min-width: 40%;
-    /*min-height: 665px; */
     background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
@@ -159,7 +154,7 @@ body {
 
 .calls, .rating {
     min-width: 49%;
-    min-height: 400px;/* */
+    min-height: 400px;
     background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
@@ -183,10 +178,10 @@ table {
 
 
 table th, table td {
-    padding: 8px 8px 8px 4%;
+    padding: 0 5px 0 1%;
     text-align: left;
-    font-size: 27px;
-    overflow: hidden; /* Скрытие переполнения */
-    text-overflow: ellipsis; /* Троеточие для длинного текста */
-    white-space: nowrap; /* Предотвращение переноса текста */
+    font-size: 20px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
 }
