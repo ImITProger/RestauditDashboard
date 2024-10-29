@@ -167,7 +167,7 @@ body {
 .calls h2, .requests h2, .visits h2, .stats h2, .rating h2, .weather h2 {
     color: #EC7F24;
     margin: 10px;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 table {
